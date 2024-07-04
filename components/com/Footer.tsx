@@ -17,11 +17,7 @@ const Footer = () => {
         </p>
  <PlaceholdersAndVanishInputDemo></PlaceholdersAndVanishInputDemo>
        
-          <MagicButton
-            title="Send"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
+          
         
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">

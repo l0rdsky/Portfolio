@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "Tweets", link: "#twitter" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -71,19 +71,27 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-    title: "Local Business Directory App",
+    title: "Business Directory ",
     des: "Connect with local businesses effortlessly with this comprehensive directory app, designed to help users find and explore nearby services.",
     img: "/local_business_directory.jpg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/firebase.svg"],
-      link: "/ui.earth.com",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/firebase.svg", "/c.svg"],
+      link: "https://expo.dev/artifacts/eas/23YXCx5aehnK98TtMrxcjw.apk",
     },
     {
       id: 2,
-      title: "Free Fire Tournament App",
+      title: "Tournament App",
       des: "Organize and participate in thrilling Free Fire tournaments with our dedicated app, ensuring seamless registration and real-time updates.",
       img: "/free_fire.jpg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+      iconLists: ["/re.svg","/firebase.svg", "/tail.svg", "/ts.svg", "/c.svg"],
       link: "/ui.yoom.com",
+    },
+    {
+      id: 3,
+      title: "Online Insurance Portal",
+      des: " Online Insurance Platform project designed to revolutionize the insurance experience. ",
+      img: "/Online insurance.jpg",
+      iconLists: ["/mongodb-icon.svg", "/django.svg",  "/sql-database-generic-svgrepo-com.svg"],
+      link: "https://github.com/AI-ApeX-DeV/Infosys_Online_Insurance_Project",
     },
     
   ];
@@ -91,32 +99,62 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
+        "I see more and more students becoming `Instagram slaves` around me. We're heading towards a sad world.",
+      name: "Akash Pawar",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
+        "Sometimes I wonder how technology operates like magic, with everything running on just 0's and 1's.",
+        name: "Akash Pawar",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
+        "Today i turned 22 but feels like I haven't achieved anything  that I can be proud of. Just doing what the crowd is doing.Firstly Good percentage in 10th 12th then IIT JEE preparation and then CSE to get a high paying job. I am too cowardly to take some serious decisions",
+        name: "Akash Pawar",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
+        "Most of the children of politicians and bureaucrats study and settle in Western developed countries, funded by our taxes. There should be a law barring politicians' children from moving abroad.",
+        name: "Akash Pawar",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
+        "Anyone who claims that their political party does no wrong and the other party does no right is either a liar, a fool or both.",
+        name: "Akash Pawar",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "life starts when you stop living for instagram",
+      name: "Akash Pawar",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Brain drain is better than brain in drain",
+      name: "Akash Pawar",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Those who commit to nothing are distracted by everything",
+      name: "Akash Pawar",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "I heard some students in my class talking about buying bikes and iPhones with the SC/ST scholarship money and fee discounts, while we, the general students, are still struggling to pay the college fees on our own. Strange world!",
+      name: "Akash Pawar",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "If you have to pay a price for being nice then it's good to leave them over there",
+      name: "Akash Pawar",
       title: "Director of AlphaStream Technologies",
     },
   ];
@@ -189,13 +227,21 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link:"https://github.com/l0rdsky"
     },
     {
       id: 2,
       img: "/twit.svg",
+      link:"https://x.com/l0rdsky34"
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/akash-pawar-516a74234/"
+    },
+    {
+      id: 3,
+      img: "/brand-icon.png",
+      link:"https://akashpawar.hashnode.dev/"
     },
   ];
