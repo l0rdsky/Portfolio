@@ -1,7 +1,4 @@
 "use client";
-import MagicButton from "../ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
-import { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "@/lib/firebase"; // Adjust the path based on your project structure
 import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
