@@ -13,8 +13,9 @@ const Footer = () => {
          <span className="text-purple">Your Thoughts Matter!</span> 
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-        If you've made it this far, I'd love to hear from you! 🌟 Leave me an anonymous message below—your feedback, thoughts, or just a friendly hello. I can't wait to read what you have to share! ❤️
-        </p>
+  If you&apos;ve made it this far, I&apos;d love to hear from you! 🌟 Leave me an anonymous message below—your feedback, thoughts, or just a friendly hello. I can&apos;t wait to read what you have to share! ❤️
+</p>
+
  <PlaceholdersAndVanishInputDemo></PlaceholdersAndVanishInputDemo>
        
           

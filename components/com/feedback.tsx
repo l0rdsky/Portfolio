@@ -25,31 +25,35 @@ export function PlaceholdersAndVanishInputDemo() {
     console.log(e.target.value);
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const inputElement = e.target.querySelector("input");
-    const inputValue = inputElement ? inputElement.value : "";
-
-    console.log("Form submitted with value: ", inputValue);
-
-    if (inputValue) {
-      try {
-        const docRef = await addDoc(collection(db, "Messages"), {
-          message: inputValue,
-          timestamp: new Date(),
-        });
-        console.log("Document written with ID: ", docRef.id);
-        alert("Thanks for your message!");
-        inputElement.value = ""; // Clear the input field after successful submission
-      } catch (e) {
-        console.error("Error adding document: ", e);
-        alert("There was an error submitting your message. Please try again.");
+    const inputElement = e.currentTarget.querySelector("input");
+  
+    if (inputElement) {
+      const inputValue = inputElement.value;
+      console.log("Form submitted with value: ", inputValue);
+  
+      if (inputValue) {
+        try {
+          const docRef = await addDoc(collection(db, "Messages"), {
+            message: inputValue,
+            timestamp: new Date(),
+          });
+          console.log("Document written with ID: ", docRef.id);
+          alert("Thanks for your message!");
+          inputElement.value = ""; // Clear the input field after successful submission
+        } catch (e) {
+          console.error("Error adding document: ", e);
+          alert("There was an error submitting your message. Please try again.");
+        }
+      } else {
+        alert("Please enter a message before submitting.");
       }
     } else {
-      alert("Please enter a message before submitting.");
+      console.error("Input element not found");
     }
   };
-
+  
 
   return (
     <div className="w-full mb-4 max-w-xl sm:w-[80rem] flex flex-col justify-center items-center px-4">
